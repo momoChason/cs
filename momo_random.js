@@ -119,7 +119,7 @@ async function MM() {
  async function addLike(timeout = 3 * 1000) {
 	return new Promise((resolve) => {
 		let url = {
-			url: require('./MMSLS').MMSL_random,
+			url: require('./MMSLS').MMSLS,
             headers: {
                 'Host': 'www.maimemo.com',
                 'user-agent': UA
