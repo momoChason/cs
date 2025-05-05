@@ -1,7 +1,7 @@
 // 从环境变量获取分享链接字符串
 const linksStr = process.env.MAIMEMO_LINKS;
 // 将字符串按逗号分隔成数组
-//const MMSLS = linksStr? linksStr.split(',') : [];
+const MMSLS = linksStr? linksStr.split(',') : [];
 //console.log(MMSLS);
 
 /**
@@ -17,6 +17,5 @@ const linksStr = process.env.MAIMEMO_LINKS;
 
 module.exports = {
    // MMSL_random,
-    //MMSLS,
-    linksStr
+    MMSLS
 };
