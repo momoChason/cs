@@ -43,7 +43,7 @@
  //#region 固定代码
  // ============================================变量检查============================================ \\
 async function MM() {
-     let url = require('./MMSLS').linksStr;
+     let url = require('./MMSLS').MMSLS;
      if (url) {
         return true;
      } else {
