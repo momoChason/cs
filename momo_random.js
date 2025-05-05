@@ -43,7 +43,7 @@
  //#region 固定代码
  // ============================================变量检查============================================ \\
 async function MM() {
-     let url = require('./MMSLS').MMSLS;
+     let url = require('./MMSLS').MMSL_random;
      if (url) {
         return true;
      } else {
@@ -119,7 +119,7 @@ async function MM() {
  async function addLike(timeout = 3 * 1000) {
 	return new Promise((resolve) => {
 		let url = {
-			url: require('./MMSLS').MMSLS,
+			url: require('./MMSLS').MMSL_random,
             headers: {
                 'Host': 'www.maimemo.com',
                 'user-agent': UA
