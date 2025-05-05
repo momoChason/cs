@@ -1,8 +1,7 @@
 // 从环境变量获取分享链接字符串
-//const linksStr = process.env.MAIMEMO_LINKS;
+const linksStr = process.env.MAIMEMO_LINKS;
 // 将字符串按逗号分隔成数组
-const MMSLS =["https://www.maimemo.com/share/page?uid=16433672&pid=53d61e6549518192220b815fdbec5652&tid=46ecf2e2f79c3240e2a4d4950f8c898b"];
-//console.log(MMSLS);
+const MMSLS = linksStr? linksStr.split(',') : [];
 
 /**
  * 生成随机数字
