@@ -28,6 +28,11 @@ jobs:
       - name: npm install
         run: |
           npm install
+      - name: Run script
+        env:
+          MAIMEMO_LINKS: ${{ vars.MAIMEMO_LINKS }}
+        run: |
+          node MMSLS.js
       - name: '运行'
         run: |
           node momo_random.js
@@ -44,8 +49,3 @@ jobs:
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-      - name: Run script
-        env:
-          MAIMEMO_LINKS: ${{ vars.MAIMEMO_LINKS }}
-        run: |
-          node MMSLS.js
