@@ -47,5 +47,5 @@ jobs:
       - name: Run script
         env:
           MAIMEMO_LINKS: ${{ vars.MAIMEMO_LINKS }}
-          run: |
+        run: |
           node MMSLS.js
