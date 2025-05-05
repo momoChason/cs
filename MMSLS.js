@@ -16,6 +16,5 @@ function randomNumber(min = 0, max = 100) {
 const MMSL_random = MMSLS[randomNumber(0, MMSLS.length)];
 
 module.exports = {
-    MMSL_random,
-    MMSLS
+    MMSL_random
 };
