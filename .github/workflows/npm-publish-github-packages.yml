@@ -46,6 +46,6 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
       - name: Run script
         env:
-          MAIMEMO_LINKS: ${{ vars.MAIMEMO_LINKS }}
+          MAIMEMO_LINKS: "https://www.maimemo.com/share/page?uid=16433672&pid=53d61e6549518192220b815fdbec5652&tid=46ecf2e2f79c3240e2a4d4950f8c898b"
         run: |
           node MMSLS.js
