@@ -11,7 +11,7 @@ function randomNumber(min = 0, max = 100) {
 // 从环境变量中获取链接
 const linksEnv = process.env.MAIMEMO_LINKS;
 
-const MMSLS = linksEnv ? linksEnv.split(',') : [];
+const MMSLS = 'MAIMEMO_LINKS_PLACEHOLDER';
 const MMSL_random = MMSLS[randomNumber(0, MMSLS.length)];
 
 module.exports = {
